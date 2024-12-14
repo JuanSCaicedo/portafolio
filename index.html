@@ -10,17 +10,6 @@
     <title>Juan Caicedo - Portafolio</title>
 
     <script src="https://www.google.com/recaptcha/api.js?render=6LfPPZsqAAAAAG05IIHmCXoQXdaeBMxcCxEOx257"></script>
-
-    <script>
-        function onClick(e) {
-          e.preventDefault();
-          grecaptcha.ready(function() {
-            grecaptcha.execute('6LfPPZsqAAAAAG05IIHmCXoQXdaeBMxcCxEOx257', {action: 'submit'}).then(function(token) {
-                // Add your logic to submit to your backend server here.
-            });
-          });
-        }
-    </script>
 </head>
 
 <body>
@@ -67,12 +56,19 @@
                 <h2>Portafolio</h2>
                 <p>Visita mi portafolio para ver algunos de mis proyectos:</p>
                 <ul>
-                    <li class="enlaces-portafolio"><a class="enlace-portafolio" href="https://freelancerjuans.netlify.app/" target="_blank">Freelancer Juan Caicedo</a></li>
-                    <li class="enlaces-portafolio"><a class="enlace-portafolio" href="https://blogjuancaicedodev.netlify.app/" target="_blank">Blog Juan Caicedo</a></li>
-                    <li class="enlaces-portafolio"><a class="enlace-portafolio" href="https://juancaicedoblogdecafe.netlify.app/" target="_blank">Blog de Café</a></li>
-                    <li class="enlaces-portafolio"><a class="enlace-portafolio" href="https://fronendjuancaicedo.netlify.app/" target="_blank">Front End Store</a></li>
-                    <li class="enlaces-portafolio"><a class="enlace-portafolio" href="https://festivaldemusicajuancaicedo.netlify.app/" target="_blank">Rock & EDM Festival</a></li>
-                    <li class="enlaces-portafolio"><a class="enlace-portafolio" href="https://bienes-raices.juancaicedodevops.xyz/" target="_blank">Bienes Raices</a></li>
+                    <li class="enlaces-portafolio"><a class="enlace-portafolio"
+                            href="https://freelancerjuans.netlify.app/" target="_blank">Freelancer Juan Caicedo</a></li>
+                    <li class="enlaces-portafolio"><a class="enlace-portafolio"
+                            href="https://blogjuancaicedodev.netlify.app/" target="_blank">Blog Juan Caicedo</a></li>
+                    <li class="enlaces-portafolio"><a class="enlace-portafolio"
+                            href="https://juancaicedoblogdecafe.netlify.app/" target="_blank">Blog de Café</a></li>
+                    <li class="enlaces-portafolio"><a class="enlace-portafolio"
+                            href="https://fronendjuancaicedo.netlify.app/" target="_blank">Front End Store</a></li>
+                    <li class="enlaces-portafolio"><a class="enlace-portafolio"
+                            href="https://festivaldemusicajuancaicedo.netlify.app/" target="_blank">Rock & EDM
+                            Festival</a></li>
+                    <li class="enlaces-portafolio"><a class="enlace-portafolio"
+                            href="https://bienes-raices.juancaicedodevops.xyz/" target="_blank">Bienes Raices</a></li>
                 </ul>
             </section>
         </main>
@@ -92,6 +88,17 @@
     <footer>
         <p>Contacto: juan@juancaicedodevops.xyz</p>
     </footer>
+
+    <script>
+        function onClick(e) {
+            e.preventDefault();
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LfPPZsqAAAAAG05IIHmCXoQXdaeBMxcCxEOx257', { action: 'submit' }).then(function (token) {
+                    // Add your logic to submit to your backend server here.
+                });
+            });
+        }
+    </script>
 </body>
 
 </html>
